@@ -1,6 +1,6 @@
 .zone {
     padding:30px 50px;
-    margin:40px 60px;
+    /*margin:40px 60px;*/
     cursor:pointer;
     display:inline-block;
     color:#FFF;
@@ -15,6 +15,32 @@
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+}
+.green {
+    grid-row: 1/-1;
+    grid-column: 10 span;
+    
+    
+}
+.red {
+    grid-row: 1 span;
+    grid-column: 1/-1;
+    padding: 500px;
+   
+}
+.blue {
+   
+    grid-column: 1/-1;
+}
+.yellow {
+   
+    grid-column: 1/-1;
 }
 
 /***********************************************************************
